@@ -1,0 +1,24 @@
+s1="onetwothreefourfivesixseveneightnine"
+s2="teneleventwelvethirteenfourteenfifteensixteenseventeeneighteennineteen"
+n1=len(s1)
+n2=len(s2)
+n3=len(10*"twenty")+n1  #20 to 29
+n4=len(10*"thirty")+n1  #30 to 39
+n5=len(10*"forty")+n1  #40 to 49
+n6=len(10*"fifty")+n1   #50 to 59
+n7=len(10*"sixty")+n1   #60 to 69
+n8=len(10*"seventy")+n1 #70 to 79
+n9=len(10*"eighty")+n1 #80 to 89
+n10=len(10*"ninety")+n1 #90 to 99
+n_1to99=n1+n2+n3+n4+n5+n6+n7+n8+n9+n10   #1 to 99
+n_100=len(100*"onehundred")+n_1to99      #100 to 199
+n_200=len(100*"twohundred")+n_1to99      #200 to 299
+n_300=len(100*"threehundred")+n_1to99    #300 to 399
+n_400=len(100*"fourhundred")+n_1to99     #400 to 499
+n_500=len(100*"fivehundred")+n_1to99     #500 to 599
+n_600=len(100*"sixhundred")+n_1to99      #600 to 699
+n_700=len(100*"sevenhundred")+n_1to99    #700 to 799
+n_800=len(100*"eighthundred")+n_1to99    #800 to 899
+n_900=len(100*"ninehundred")+n_1to99     #900 to 999
+n_total=n_1to99+n_100+n_200+n_300+n_400+n_500+n_600+n_700+n_800+n_900+len("onethousand")+len(99*9*"and")
+print(n_total)
