@@ -1,0 +1,11 @@
+a=0
+b=1
+count=1
+while(True):
+    sum=a+b
+    a=b
+    b=sum
+    count+=1
+    if(len(str(sum))==1000):
+        print(count)
+        break
