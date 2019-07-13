@@ -1,0 +1,23 @@
+3
+7 5
+2 4 6
+8 5 9 3
+Starting at the bottom,
+We look at 8 and 5, pick the maximum, 8 in this case, and replace the 2 in the previous row with their sum 10.
+We look next at 5 and 9, pick the maximum, 9, and replace the 4 in the previous row with their sum 13.
+We look lastly at 9 and 3, pick the maximum, 9, and replace the 6 in the previous row with their sum 15.
+Now our array looks like:
+3
+7 5
+10 13 15
+
+Let’s do it again. Take the larger of 10 and 13 and add it to 7 making 20.
+Take the larger of 13 and 15 and add it to 5 making 20.
+Now our array looks like:
+3
+20 20
+
+At last we take the larger of 20 and 20 (yes, I know they’re the same) and add it to 3 making 23.
+And our array looks like:
+23
+The maximum total path in the triangle.
