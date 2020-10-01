@@ -28,3 +28,4 @@ def getMinStep(n):
     return dp[n]
 
 print(getMinStep(10))
+# tuaevgdc
