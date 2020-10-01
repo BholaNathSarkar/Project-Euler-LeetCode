@@ -1,0 +1,28 @@
+Problem Statement:
+
+Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+
+Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+
+
+
+
+code:
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+       int m=INT_MIN,sum=0;
+        for(int val:nums)
+        {
+            sum+=val;
+            m=max(sum,m);
+            if(sum<0)
+            {
+                sum=0;
+            }
+        }
+        return m;
+    }
+   
+};
